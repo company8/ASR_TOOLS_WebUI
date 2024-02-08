@@ -382,4 +382,4 @@ parser.add_argument(
 )
 args = parser.parse_args()
 
-app.launch(inbrowser=not args.no_autolaunch, server_name=args.server_name, server_port=7971)
+app.launch(inbrowser=not args.no_autolaunch, share=True, server_name=args.server_name, server_port=7971)
