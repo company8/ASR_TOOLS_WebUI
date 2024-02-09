@@ -51,7 +51,7 @@ def transcribe_bela(audio_path):
 
 def transcribe_one(audio_path,mytype):
     
-    segments, info = model.transcribe(audio_path, beam_size=5,vad_filter=True,vad_parameters=dict(min_silence_duration_ms=500),)
+    segments, info = model.transcribe(audio_path, beam_size=20,vad_filter=True,vad_parameters=dict(min_silence_duration_ms=500),)
     print("Detected language '%s' with probability %f" % (info.language, info.language_probability))
 
     text_str = ""
@@ -99,9 +99,9 @@ if __name__ == "__main__":
 
     if device == "cuda":
         try:
-            model = WhisperModel(mytype, device="cuda", compute_type="float16",download_root="./whisper_model",local_files_only=False)
+            model = WhisperModel(mytype, device="cuda", compute_type="float32",download_root="./whisper_model",local_files_only=False)
         except Exception as e:
-            model = WhisperModel(mytype, device="cuda", compute_type="int8_float16",download_root="./whisper_model",local_files_only=False)
+            model = WhisperModel(mytype, device="cuda", compute_type="int8_float32",download_root="./whisper_model",local_files_only=False)
     else:
         model = WhisperModel(mytype, device="cpu", compute_type="int8",download_root="./whisper_model",local_files_only=False)
 
