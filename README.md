@@ -22,4 +22,4 @@ python3 webui_dataset.py
 
 https://www.bilibili.com/video/BV1da4y117Y6/
 
-## The official address of the project：SocialSisterYi/bcut-asr: 使用必剪API的语音字幕识别 (github.com)
+## The official address of the project：[SocialSisterYi/bcut-asr: 使用必剪API的语音字幕识别 (github.com)](https://github.com/SocialSisterYi/bcut-asr)
