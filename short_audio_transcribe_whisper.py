@@ -75,18 +75,18 @@ def transcribe_one(audio_path,mytype):
 
 
         if torch.cuda.is_available():
-            options = whisper.DecodingOptions(beam_size=5,prompt="生于忧患，死于欢乐。不亦快哉！")
+            options = whisper.DecodingOptions(beam_size=20,prompt="生于忧患，死于欢乐。不亦快哉！")
         else:
-            options = whisper.DecodingOptions(beam_size=5,fp16 = False,prompt="生于忧患，死于欢乐。不亦快哉！")
+            options = whisper.DecodingOptions(beam_size=20,fp16 = False,prompt="生于忧患，死于欢乐。不亦快哉！")
 
     else:
 
     
 
         if torch.cuda.is_available():
-            options = whisper.DecodingOptions(beam_size=5)
+            options = whisper.DecodingOptions(beam_size=20)
         else:
-            options = whisper.DecodingOptions(beam_size=5,fp16 = False)
+            options = whisper.DecodingOptions(beam_size=20,fp16 = False)
 
 
 
