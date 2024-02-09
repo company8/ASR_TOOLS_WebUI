@@ -1,25 +1,25 @@
 ## 安装Python3
 
-## 安装依赖
+## Install dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-## 音频放入raw目录
+## Put the audio into the raw directory
 
 ```
-音频格式 角色名.wav
+audio.wav
 ```
 
-## 运行webui
+## Run webui
 
 ```
 python3 webui_dataset.py
 ```
 
-## 视频攻略
+## Video guide
 
 https://www.bilibili.com/video/BV1da4y117Y6/
 
-## 必剪项目官方地址：SocialSisterYi/bcut-asr: 使用必剪API的语音字幕识别 (github.com)
+## The official address of the project：SocialSisterYi/bcut-asr: 使用必剪API的语音字幕识别 (github.com)
